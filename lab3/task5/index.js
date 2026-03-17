@@ -3,4 +3,4 @@ const countVowels = (str) => {
     return str.split("").filter(char => vowels.includes(char)).length;
 };
 
-console.log(countVowels("Hello World"));
+console.log(countVowels("My name is webstorm"));

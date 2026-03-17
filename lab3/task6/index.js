@@ -2,4 +2,4 @@ function power(base, exponent) {
     return base ** exponent;
 }
 
-console.log(power(5, 55));
+console.log(power(6, 2));
