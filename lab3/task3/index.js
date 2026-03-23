@@ -1,29 +1,29 @@
 let season = 11;
 
 switch (season) {
-    case 1: console.log("january");
+    case 1: console.log("Січень");
         break;
-    case 2: console.log("february");
+    case 2: console.log("Лютий");
         break;
-    case 3: console.log("march");
+    case 3: console.log("Березень");
         break;
-    case 4: console.log("april");
+    case 4: console.log("Квітень");
         break;
-    case 5: console.log("may");
+    case 5: console.log("Травень");
         break;
-    case 6: console.log("june");
+    case 6: console.log("Червень");
         break;
-    case 7: console.log("july");
+    case 7: console.log("Липень");
         break;
-    case 8: console.log("august");
+    case 8: console.log("Серпень");
         break;
-    case 9: console.log("september");
+    case 9: console.log("Вересень");
         break;
-    case 10: console.log("october");
+    case 10: console.log("Жовтень");
         break;
-    case 11: console.log("november");
+    case 11: console.log("Листопад");
         break;
-    case 12: console.log("december");
+    case 12: console.log("Грудень");
         break;
     default: console.log("Немає такого місяця!");
 }

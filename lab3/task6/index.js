@@ -1,5 +1,5 @@
-function power(base, exponent) {
-    return base ** exponent;
+function power(a, b) {
+    return a ** b;
 }
 
 console.log(power(6, 2));

@@ -1,6 +1,6 @@
-let a=5, fac=1;
+let y=5, fac=1;
 
-for (let i = 0; i <= a; i++) {
+for (let i = 0; i <= y; i++) {
     fac=fac*i;
 }
 console.log(fac);
