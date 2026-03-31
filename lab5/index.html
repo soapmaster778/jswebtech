@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1>Лабораторна робота №5</h1>
+
+<section>
+    <h2>1. Лампочка</h2>
+
+    <label for="lampType">Тип лампочки:</label>
+    <select id="lampType">
+        <option value="normal">Звичайна</option>
+        <option value="energy">Енергозберігаюча</option>
+        <option value="led">Світлодіодна</option>
+    </select>
+
+    <div id="lamp" class="lamp off"></div>
+
+    <button id="toggleLampBtn">Увімкнути / Вимкнути</button>
+    <button id="brightnessBtn">Яскравість</button>
+
+    <p id="lampText">Лампочка вимкнена</p>
+</section>
+
+<section>
+    <h2>2. Світлофор</h2>
+
+    <div class="traffic-light">
+        <div id="red" class="light"></div>
+        <div id="yellow" class="light"></div>
+        <div id="green" class="light"></div>
+    </div>
+
+    <p id="trafficText">Стан: червоний</p>
+
+    <button id="startTrafficBtn">Запустити</button>
+    <button id="stopTrafficBtn">Зупинити</button>
+    <button id="nextTrafficBtn">Наступний стан</button>
+    <button id="changeTimeBtn">Змінити час</button>
+</section>
+
+<section>
+    <h2>3. Дата та час</h2>
+
+    <h3>Годинник</h3>
+    <div id="clock">00:00:00</div>
+
+    <h3>Таймер зворотного відліку</h3>
+    <input type="datetime-local" id="timerInput">
+    <button id="startTimerBtn">Запустити таймер</button>
+    <p id="timerText">Таймер не запущений</p>
+
+    <h3>Календар</h3>
+    <input type="month" id="monthInput">
+    <button id="showCalendarBtn">Показати календар</button>
+    <div id="calendar"></div>
+
+    <h3>День народження</h3>
+    <input type="datetime-local" id="birthdayInput">
+    <button id="birthdayBtn">Порахувати</button>
+    <p id="birthdayText">Оберіть дату</p>
+</section>
+
+<section>
+    <h2>4. Магазин (Map, Set, WeakMap, WeakSet)</h2>
+
+    <input type="text" id="productName" placeholder="Назва">
+    <input type="number" id="productPrice" placeholder="Ціна">
+    <input type="number" id="productCount" placeholder="Кількість">
+    <button id="addProductBtn">Додати товар</button>
+
+    <br><br>
+
+    <input type="number" id="deleteId" placeholder="ID для видалення">
+    <button id="deleteProductBtn">Видалити товар</button>
+
+    <br><br>
+
+    <input type="number" id="updateId" placeholder="ID для оновлення">
+    <input type="number" id="newPrice" placeholder="Нова ціна">
+    <input type="number" id="newCount" placeholder="Нова кількість">
+    <button id="updateProductBtn">Оновити товар</button>
+
+    <br><br>
+
+    <input type="text" id="searchName" placeholder="Пошук за назвою">
+    <button id="searchProductBtn">Знайти товар</button>
+
+    <br><br>
+
+    <input type="number" id="orderId" placeholder="ID товару">
+    <input type="number" id="orderCount" placeholder="Кількість замовлення">
+    <button id="orderBtn">Замовити</button>
+
+    <h3>Список товарів</h3>
+    <div id="productList"></div>
+
+    <h3>Список замовлень</h3>
+    <div id="orderList"></div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
