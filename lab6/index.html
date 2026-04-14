@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна №6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Список товарів</h1>
+    <div id="totalPrice">Загальна сума: 0 грн</div>
+</header>
+
+<main>
+    <section class="controls-section">
+        <h2>Пошук по категорії</h2>
+        <input
+                type="text"
+                id="categorySearch"
+                placeholder="Наприклад: іграшки"
+        >
+
+        <h2>Фільтр за категоріями</h2>
+        <div id="filters"></div>
+
+        <h2>Сортування</h2>
+        <div id="sortButtons">
+            <button type="button" data-sort="price">За ціною</button>
+            <button type="button" data-sort="created">За датою створення</button>
+            <button type="button" data-sort="updated">За датою оновлення</button>
+            <button type="button" id="resetSort">Скинути сортування</button>
+        </div>
+    </section>
+
+    <section>
+        <button type="button" id="addBtn">Додати товар</button>
+        <div id="productList"></div>
+    </section>
+
+    <section class="todo-section">
+        <h2>To-Do List</h2>
+
+        <div class="todo-controls">
+            <input type="text" id="taskInput" placeholder="Нове завдання" required>
+            <button type="button" id="addTask">Додати</button>
+        </div>
+
+        <div id="taskSortButtons">
+            <button type="button" data-task-sort="created">За датою додавання</button>
+            <button type="button" data-task-sort="done">За станом виконання</button>
+            <button type="button" data-task-sort="updated">За датою оновлення</button>
+            <button type="button" id="resetTaskSort">Скинути сортування</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+</main>
+
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <button type="button" id="closeModal" class="close" aria-label="Закрити модальне вікно">&times;</button>
+
+        <h2 id="modalTitle">Додати / Редагувати товар</h2>
+
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Назва товару" required>
+            <input type="number" id="price" placeholder="Ціна" min="0" step="0.01" required>
+            <input type="text" id="category" placeholder="Категорія товару" required>
+            <input type="url" id="image" placeholder="URL зображення" required>
+            <button type="submit">Зберегти</button>
+        </form>
+    </div>
+</div>
+
+<div id="snackbar"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
