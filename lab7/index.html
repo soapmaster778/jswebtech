@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Gunman — ЛР №7 JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="game-menu" id="menu">
+    <h1 class="game-menu__title">Wild Gunman</h1>
+    <button class="button button-start-game" id="startBtn">Start Game</button>
+  </section>
+
+  <main class="wrapper" id="wrapper">
+    <section class="game-panels" id="panels">
+      <div class="time-panel">
+        <div class="time-panel__item">
+          <div class="time-panel__label">Gunman</div>
+          <div class="time-panel__value" id="gunmanTime">0.00</div>
+        </div>
+        <div class="time-panel__item">
+          <div class="time-panel__label">Time.You</div>
+          <div class="time-panel__value" id="playerTime">0.00</div>
+        </div>
+      </div>
+      <div class="score-panel">
+        <div class="score-panel__score">Score: <span id="score">0</span></div>
+        <div class="score-panel__level" id="level">Level 1</div>
+      </div>
+    </section>
+
+    <div class="message" id="message"></div>
+
+    <section class="game-screen" id="screen">
+      <div class="gunman char-1 walk" id="gunman" aria-label="gunman"></div>
+      <button class="button button-restart" id="restartBtn">Restart</button>
+      <button class="button button-next-level" id="nextBtn">Next Level</button>
+    </section>
+  </main>
+
+  <section class="win-screen" id="winScreen">
+    <h2 class="win-screen__title">You have won the game!</h2>
+    <p class="win-screen__score">Final score: <span id="finalScore">0</span></p>
+    <button class="button button-start-game" id="playAgainBtn">Play again</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
